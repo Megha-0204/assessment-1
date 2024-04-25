@@ -1,0 +1,81 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev {
+  top: unset !important;
+  bottom: 0;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next svg, .swiper-button-prev svg {
+  width: 20px !important;
+}
+
+.slider-controls {
+  max-width: 1300px;
+}
+.slider-scrollbar {
+  width: 1300px !important;
+  max-width: 1300px;
+}
+
+.grid-item {
+  max-width: 200px;
+  background-color: red;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+}
+.grid-item--width2 {
+  width: 400px;
+  background-color: pink;
+}
+
+.slider2 .swiper-slide {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: green;
+  height: 200px;
+}
+.slider2 .swiper-slide:nth-child(2n) {
+  background-color: aqua;
+}
+.slider2 .swiper-slide-active {
+  max-width: 670px;
+  height: auto;
+}
+.slider2 .swiper-slide:nth-child(3n) {
+  background-color: black;
+}
+
+.tiles {
+  max-width: 800px;
+}
+
+.testimonials .card {
+  display: grid;
+  /* align-items: start; */
+  /* column-gap: var(--container-gutter, 1rem); */
+  /* align-content: start; */
+  grid-template-columns: 1fr 1fr;
+}
+.testimonials .slider3 .swiper-button-prev {
+  left: 43% !important;
+}/*# sourceMappingURL=index.css.map */

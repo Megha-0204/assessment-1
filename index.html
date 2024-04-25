@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search"
+                placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <nav class="navbar bg-transparent fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+    </header>
+    <main>
+      <header class="header-slider mb-5">
+        <div class="header-slider__slider swiper mySwiper1 swiper-fade
+          swiper-initialized swiper-horizontal swiper-watch-progress
+          swiper-backface-hidden">
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">Slide 1</div> -->
+
+            <div class="swiper-slide">
+
+              <picture class="card__image">
+                <source aria-label=""
+                  srcset="https://derooy.draad.dev/wp-content/uploads/Huizen-2-1024x683.jpg"
+                  media="(max-width: 600px) and (orientation: portrait)">
+                <img
+                  src="https://derooy.draad.dev/wp-content/uploads/Huizen-2.jpg"
+                  class="" alt="" loading="eager" decoding="async"
+                  srcset="https://derooy.draad.dev/wp-content/uploads/Huizen-2.jpg
+                  2500w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-300x200.jpg
+                  300w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-1024x683.jpg
+                  1024w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-768x512.jpg
+                  768w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-1536x1024.jpg
+                  1536w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-2048x1366.jpg
+                  2048w" sizes="(max-width: 2500px) 100vw, 2500px"> </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="card__image">
+                <source aria-label=""
+                  srcset="https://derooy.draad.dev/wp-content/uploads/Huizen-2-1024x683.jpg"
+                  media="(max-width: 600px) and (orientation: portrait)">
+                <img
+                  src="https://derooy.draad.dev/wp-content/uploads/Huizen-2.jpg"
+                  class="" alt="" loading="eager" decoding="async"
+                  srcset="https://derooy.draad.dev/wp-content/uploads/Huizen-2.jpg
+                  2500w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-300x200.jpg
+                  300w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-1024x683.jpg
+                  1024w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-768x512.jpg
+                  768w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-1536x1024.jpg
+                  1536w,
+                  https://derooy.draad.dev/wp-content/uploads/Huizen-2-2048x1366.jpg
+                  2048w" sizes="(max-width: 2500px) 100vw, 2500px"> </picture>
+            </div>
+          </div>
+          <div class="slider-controls position-relative m-auto">
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" aria-hidden="true">
+                <path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"></path>
+            </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" aria-hidden="true" width="14" viewBox="0 0 448 512">
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+            </svg>
+            </div>
+            <div class="swiper-pagination">
+              <!-- <span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(1) scaleY(1); transition-duration: 2500ms;"></span> -->
+            </div>
+            
+          </div>         
+        </div>
+      </header>
+
+      <section class="gallery mb-5 pt-5">
+        <div class="container">
+          <div class="grid">
+            <div class="grid-item mb-2">
+              <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="grid-item grid-item--width2 mb-2">
+              <img src="image/image3.jpg" alt="">
+            </div>
+            <div class="grid-item mb-2">
+              <img src="image/image2.jpg" alt="">
+            </div>
+            <div class="grid-item">
+              <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="grid-item grid-item--width2 mb-2">
+              <img src="image/image3.jpg" alt="">
+            </div>
+            <div class="grid-item mb-2">
+              <img src="image/image2.jpg" alt="">
+            </div>
+            <div class="grid-item">
+              <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="grid-item grid-item--width2 mb-2">
+              <img src="image/image3.jpg" alt="">
+            </div>
+            <div class="grid-item mb-2">
+              <img src="image/image2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" mb-5">
+        <div class="container">
+
+        <div class="swiper slider2 swiper-fade
+        swiper-initialized swiper-horizontal swiper-watch-progress
+        swiper-backface-hidden ">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/image3.jpg" alt="">
+            </div>
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" aria-hidden="true">
+              <path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"></path>
+          </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" aria-hidden="true" width="14" viewBox="0 0 448 512">
+              <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+          </svg>
+          </div>
+
+       
+        </div>
+      </div>
+
+      </section>
+
+      <section class="tiles mb-5 mx-auto">
+        <div class="container text-center">
+          <h3 class="pb-3">Tiles Layout</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            inventore, officia itaque quasi aliquid eum nam eos ea, eius
+            deleniti dicta sed commodi cumque eaque laboriosam odit voluptate,
+            esse sapiente?</p>
+          <a href="" class="btn btn-primary">Clicl here</a>
+        </div>
+      </section>
+
+
+      <section class="testimonials mb-5">
+        <div class="container">
+          <div class="swiper slider3 pb-5">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+
+                <article class="card border-0">
+                  <div class="card-content text-start m-auto ms-0">
+                    <h3>Testimonios</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laboriosam, atque.</p>
+                  </div>
+                  <div class="card-image">
+                    <picture>
+                      <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+                  <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
+                      <img src="image/image4.jpg" alt="Flowers"
+                        style="width:auto;"></picture>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide"> <article class="card border-0">
+                  <div class="card-content text-start m-auto ms-0">
+                    <h3>Testimonios</h3>
+                    <p>jkdljfkl;sajfa;ljdsfl;ajsdf;kljasklj.</p>
+                  </div>
+                  <div class="card-image">
+                    <picture>
+                      <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+              <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
+                      <img src="image/image3.jpg" alt="Flowers"
+                        style="width:auto;"></picture>
+                  </div>
+                </article></div>
+              <!-- <div class="swiper-slide">Slide 3</div> -->
+
+            </div>
+           
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" aria-hidden="true">
+                <path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"></path>
+            </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" aria-hidden="true" width="14" viewBox="0 0 448 512">
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+            </svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/masonry.min.js"></script>
+    <script>
+      var swiper1 = new Swiper(".mySwiper1", {
+        effect: 'fade',
+
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    autoplay: 
+    {
+      delay: 2000,
+    },
+      });
+      var slider3 = new Swiper(".slider3", {
+        effect: 'fade',
+     
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+     
+    // autoplay: 
+    // {
+    //   delay: 2000,
+    // },
+      });
+
+   var slider2 = new Swiper ('.slider2', {
+    effect: 'fade',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: true,
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+});
+
+
+      $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200,
+  gutter: 15,
+});
+    </script>
+  </body>
+</html>
