@@ -1,3 +1,38 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-slider .swiper-slide {
+  position: relative;
+}
+.header-slider .swiper-slide img {
+  height: 600px;
+}
+.header-slider .swiper-slide picture {
+  width: 100%;
+}
+.header-slider .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  bottom: 50px;
+}
+.header-slider__content {
+  position: absolute;
+  margin-top: 200px;
+  top: 0;
+}
+.header-slider__content h1 {
+  max-width: 560px;
+  color: #000;
+  text-align: left;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -12,70 +47,155 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (min-width: 768px) {
+  .swiper-slide img {
+    height: 500px;
+  }
+}
 .swiper-button-next, .swiper-button-prev {
-  top: unset !important;
+  top: unset;
   bottom: 0;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
   display: none;
 }
 .swiper-button-next svg, .swiper-button-prev svg {
-  width: 20px !important;
+  width: 20px;
 }
 
 .slider-controls {
   max-width: 1300px;
 }
 .slider-scrollbar {
-  width: 1300px !important;
+  width: 1300px;
   max-width: 1300px;
 }
 
 .grid-item {
-  max-width: 200px;
-  background-color: red;
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+}
+@media only screen and (min-width: 439px) {
+  .grid-item {
+    max-width: 200px;
+  }
 }
 .grid-item img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 .grid-item--width2 {
   width: 400px;
   background-color: pink;
 }
 
-.slider2 .swiper-slide {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  background-color: green;
-  height: 200px;
-}
-.slider2 .swiper-slide:nth-child(2n) {
-  background-color: aqua;
-}
-.slider2 .swiper-slide-active {
-  max-width: 670px;
-  height: auto;
-}
-.slider2 .swiper-slide:nth-child(3n) {
-  background-color: black;
-}
-
 .tiles {
   max-width: 800px;
 }
 
-.testimonials .card {
-  display: grid;
-  /* align-items: start; */
-  /* column-gap: var(--container-gutter, 1rem); */
-  /* align-content: start; */
-  grid-template-columns: 1fr 1fr;
+@media only screen and (min-width: 768px) {
+  .testimonials-slider .swiper-button-prev {
+    left: 50%;
+  }
 }
-.testimonials .slider3 .swiper-button-prev {
-  left: 43% !important;
+.testimonials-slider__card {
+  display: grid;
+  gap: var(--container-gutter, 2rem);
+}
+@media only screen and (min-width: 768px) {
+  .testimonials-slider__card {
+    gap: var(--container-gutter, 1rem);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.testimonials-slider__card p {
+  max-width: 520px;
+}
+
+.photo-slider__box {
+  float: left;
+  margin-inline: 10px;
+}
+.photo-slider__box img {
+  height: 300px;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+}
+@media only screen and (min-width: 768px) {
+  .photo-slider__box img {
+    height: 400px;
+  }
+}
+
+footer {
+  background-color: #cbcae4;
+}
+footer li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  footer li a {
+    font-size: 18px;
+  }
+}
+footer li::marker {
+  font-size: 0;
+}
+
+.slick-arrow {
+  font-size: 0;
+  border: 0;
+  background: transparent;
+  margin-inline: auto;
+  position: relative;
+  margin-top: 20px;
+}
+.slick-arrow::before {
+  content: "→";
+  font-size: 20px;
+}
+.slick-prev {
+  bottom: 0px;
+  left: 45%;
+  transform: rotate(180deg);
+  position: absolute;
+}
+.slick-next {
+  left: 50%;
+}
+
+.btn-brand {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+  transition: all 0.5s ease-in-out;
+  background-color: #cbcae4;
+}
+.btn-brand:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.brand-text {
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 400;
+}
+@media only screen and (min-width: 991px) {
+  .brand-text {
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=index.css.map */

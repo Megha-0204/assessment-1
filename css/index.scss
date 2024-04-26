@@ -1,20 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 $red-bg: red;
 $text-white: #fff;
+$black: #000;
+$color-brand: #cbcae4;
 
-.header{
-  &-slider{
-    .swiper-slide{
-position: relative;
+*,
+html {
+  font-family: "Poppins", sans-serif;
+}
+//header-slider css
+.header {
+  &-slider {
+    .swiper {
+      &-slide {
+        position: relative;
+        img {
+          height: 600px;
+        }
+        picture {
+          width: 100%;
+        }
+      }
+      &-scrollbar {
+        &.swiper-scrollbar-horizontal {
+          position: absolute;
+          bottom: 50px;
+        }
+      }
     }
-  }
-  &-content{
-    position: absolute;
-    margin-left: calc((100% - 1300px)/2);
-    margin-top: 200px;
-    top: 0;
+    &__content {
+      position: absolute;
+      // left: calc((100% - 1300px) / 2);
+      margin-top: 200px;
+      top: 0;
+      h1 {
+        max-width: 560px;
+        color: $black;
+        text-align: left;
+      }
+    }
   }
 }
 
+// navbar css
+.navbar-toggler {
+  &:focus {
+    box-shadow: none;
+  }
+}
+// common styling of swiper slider 
 .swiper {
   width: 100%;
   height: 100%;
@@ -29,42 +64,48 @@ position: relative;
     img {
       display: block;
       width: 100%;
-      height: 500px;
+      height: 300px;
       object-fit: cover;
+      @media only screen and (min-width: 768px) {
+        height: 500px;
+      }
     }
   }
   &-button {
-    &-prev {
-      // left: 43% !important;
-    }
     &-next,
     &-prev {
-      top: unset !important;
+      top: unset;
       bottom: 0;
       &::after {
         display: none;
       }
       svg {
-        width: 20px !important;
+        width: 20px;
       }
     }
   }
 }
-.slider{
-  &-controls{
-    max-width: 1300px;   
+.slider {
+  &-controls {
+    max-width: 1300px;
   }
-  &-scrollbar{
-    width:1300px !important;
+  &-scrollbar {
+    width: 1300px;
     max-width: 1300px;
   }
 }
+//gallery section css
 .grid-item {
-  max-width: 200px;
-  background-color: red;
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+  @media only screen and (min-width: 439px) {
+    max-width: 200px;
+  }
   img {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
   }
   &--width2 {
     width: 400px;
@@ -72,41 +113,111 @@ position: relative;
   }
 }
 
-.slider2 {
-  .swiper-slide {
-    max-width: fit-content;
-    background-color: green;
-    // width: 80%;
-			height: 200px;
-    &:nth-child(2n) {
-      // width:  !important;
-      background-color: aqua;
-    }
-&-active{
-  max-width: 670px;
-  height: auto;
+// tiles section css
+.tiles {
+  max-width: 800px;
 }
-    &:nth-child(3n) {
-      // width: 40% !important;
-      background-color: black;
+// testimonials section scss
+.testimonials {
+  
+  &-slider {
+    .swiper-button-prev {
+      @media only screen and (min-width: 768px) {
+        left: 50%;
+      }
+    }
+    &__card {
+      display: grid;
+      gap: var(--container-gutter, 2rem);
+      @media only screen and (min-width: 768px) {
+        gap: var(--container-gutter, 1rem);
+        grid-template-columns: 1fr 1fr;
+      }
+      p {
+        max-width: 520px;
+      }
     }
   }
 }
 
-.tiles {
-  max-width: 800px;
-}
-.testimonials {
-  .card {
-    display: grid;
-    /* align-items: start; */
-    /* column-gap: var(--container-gutter, 1rem); */
-    /* align-content: start; */
-    grid-template-columns: 1fr 1fr;
-  }
-  .slider3{
-    .swiper-button-prev{
-      left: 43% !important;
+// photo-slider css
+.photo-slider {
+  &__box {
+    float: left;
+    margin-inline: 10px;
+    img {
+      height: 300px;
+      width: 100%;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+      @media only screen and (min-width: 768px) {
+        height: 400px;
+      }
     }
+  }
+}
+// footer section css
+footer {
+  background-color: $color-brand;
+  li {
+    a {
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 400;
+      color: $black;
+      text-decoration: none;
+      @media only screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+    &::marker {
+      font-size: 0;
+    }
+  }
+}
+//common styling 
+.slick {
+  &-arrow {
+    font-size: 0;
+    border: 0;
+    background: transparent;
+    margin-inline: auto;
+    position: relative;
+    margin-top: 20px;
+    &::before {
+      content: "→";
+      font-size: 20px;
+    }
+  }
+  &-prev {
+    bottom: 0px;
+    left: 45%;
+    transform: rotate(180deg);
+    position: absolute;
+  }
+  &-next {
+    left: 50%;
+  }
+}
+.btn-brand {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid $text-white;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+  transition: all 0.5s ease-in-out;
+  background-color: $color-brand;
+
+  &:hover {
+    background-color: $black;
+    color: $text-white;
+  }
+}
+.brand-text {
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 400;
+  @media only screen and (min-width: 991px) {
+    font-size: 50px;
   }
 }
