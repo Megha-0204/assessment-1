@@ -5,6 +5,15 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+section, .header-slider {
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+  section, .header-slider {
+    margin-bottom: 80px;
+  }
+}
+
 .header-slider .swiper-slide {
   position: relative;
 }
@@ -102,6 +111,11 @@ html {
 @media only screen and (min-width: 768px) {
   .testimonials-slider .swiper-button-prev {
     left: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .testimonials-slider .swiper-button-next {
+    right: 0;
   }
 }
 .testimonials-slider__card {
