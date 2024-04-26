@@ -9,6 +9,12 @@ $color-brand: #cbcae4;
 html {
   font-family: "Poppins", sans-serif;
 }
+section,.header-slider{
+  margin-bottom: 50px;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+}
 //header-slider css
 .header {
   &-slider {
@@ -121,11 +127,18 @@ html {
 .testimonials {
   
   &-slider {
-    .swiper-button-prev {
+    .swiper-button{
+    &-prev {
       @media only screen and (min-width: 768px) {
         left: 50%;
       }
     }
+    &-next {
+      @media only screen and (min-width: 768px) {
+        right:0;
+      }
+    }
+  }
     &__card {
       display: grid;
       gap: var(--container-gutter, 2rem);
