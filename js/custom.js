@@ -22,7 +22,8 @@ delay: 2000,
 // js for testimonial slider
 var slider3 = new Swiper(".testimonials-slider", {
   effect: 'fade',
-
+  slidesPerView: 1,
+  centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
